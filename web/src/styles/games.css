@@ -1,0 +1,155 @@
+body {
+  background-color: #f0f7da;
+  font-family: "Space Mono", monospace;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.box {
+  border: 50px solid #f0f7da;
+  border-left: 300px solid #f0f7da;
+  border-right: 300px solid #f0f7da;
+
+  background-color: #c9df8a;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.header {
+  height: 200px;
+
+  color: #36802d;
+}
+
+.header-text {
+  padding-top: 25px;
+}
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.flex-area {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #77ab59;
+  padding: 20px;
+}
+
+.column {
+  flex: 50%;
+}
+
+.item {
+  margin: 5px;
+  position: relative;
+  background-color: #c9df8a;
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #000000;
+}
+
+.hidden-text {
+  color: #77ab59;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hidden-text h3 {
+  font-size: 20px;
+}
+
+.hidden-text a {
+  color: #f0f7da;
+}
+.item:hover .hidden {
+  opacity: 0.75;
+}
+
+.item:active .hidden {
+  opacity: 0.75;
+}
+
+.left {
+  flex-basis: 100%;
+}
+.middle {
+  flex: 1;
+  flex-basis: 100%;
+}
+.right {
+  flex-basis: 100%;
+}
+
+@media (max-width: 1600px) {
+  .box {
+    border-left: 200px solid #f0f7da;
+    border-right: 200px solid #f0f7da;
+  }
+}
+
+@media (max-width: 1400px) {
+  .box {
+    border-left: 150px solid #f0f7da;
+    border-right: 150px solid #f0f7da;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box {
+    border-left: 100px solid #f0f7da;
+    border-right: 100px solid #f0f7da;
+  }
+}
+
+@media (max-width: 1100px) {
+  .flex-area {
+    flex-wrap: wrap;
+    transition: 0.5 ease;
+  }
+  .left,
+  .middle {
+    flex-basis: 200px;
+  }
+  .right {
+    flex-basis: 1;
+    order: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .box {
+    border-left: 50px solid #f0f7da;
+    border-right: 50px solid #f0f7da;
+  }
+  .left {
+    flex-basis: 200px;
+  }
+  .right,
+  .middle {
+    flex-basis: 1;
+    order: 1;
+  }
+}

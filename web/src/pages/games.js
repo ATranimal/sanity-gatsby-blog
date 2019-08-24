@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../public/static/gamesportfolio/styles.css";
+import "../styles/games.css";
 
 const GamesPortfolio = () => {
   return (
