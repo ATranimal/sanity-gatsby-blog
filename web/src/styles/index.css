@@ -1,0 +1,48 @@
+.header-picture {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  border: 8px solid #e0c870;
+  border-radius: 150px;
+}
+
+.header-picture::before {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  height: 292px;
+  width: 292px;
+  border: 8px solid #cfa64c;
+  border-radius: 150px;
+}
+
+.portfolio {
+  font-family: "Work Sans", sans-serif;
+}
+
+.portfolio-header-container {
+  /* background-image: linear-gradient(#f0f7da, #e2f2fa); */
+  background-image: linear-gradient(#f0f7da, #cde9fa);
+  text-align: center;
+  height: 700px;
+  width: 100%;
+}
+
+.header-text {
+  margin: 50px 20%;
+  font-size: 32px;
+  width: 60%;
+  color: #092c12;
+}
+
+.social-media-links {
+  font-size: 32px;
+  margin: 30px;
+}
+
+.social-media-links a {
+  color: #092c12;
+}
+.social-media-links i {
+  margin: 0 25px;
+}

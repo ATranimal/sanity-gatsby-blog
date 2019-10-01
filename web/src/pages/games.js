@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../styles/games.css";
-
 const GamesPortfolio = () => {
   return (
     <>
