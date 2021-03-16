@@ -23,13 +23,12 @@
 
 .portfolio {
   font-family: "Work Sans", sans-serif;
+  background-image: linear-gradient(#f0f7da, #cde9fa);
+  padding-bottom: 8em;
 }
 
 .portfolio-header-container {
-  /* background-image: linear-gradient(#f0f7da, #e2f2fa); */
-  background-image: linear-gradient(#f0f7da, #cde9fa);
   text-align: center;
-  /* height: 700px; */
   width: 100%;
 }
 
@@ -91,5 +90,12 @@ i:hover {
 @media (max-width: 1280px) {
   .portfolio-item {
     display: block;
+  }
+
+  .portfolio-item-image {
+    padding-top: 1em;
+  }
+  .portfolio-item-text {
+    padding-bottom: 2em;
   }
 }
