@@ -1,24 +1,21 @@
-.header-picture {
-  margin: 0 auto;
-  height: 300px;
-  width: 300px;
-  border: 8px solid #e0c870;
-  border-radius: 150px;
+.portfolio-header-top {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cde9fa7f;
 }
 
-.header-picture::before {
-  content: "";
-  display: inline-block;
+.header-picture {
   margin: 0 auto;
-  height: 292px;
-  width: 292px;
-  border: 8px solid #cfa64c;
-  border-radius: 150px;
-  position: absolute;
+  height: 224px;
+  width: 140px;
+  border: 8px solid #e0c870;
+  border-radius: 21%;
 }
 
 .header-picture img {
-  border-radius: 50%
+  border-radius: 20%
 }
 
 .portfolio {
@@ -33,10 +30,13 @@
 }
 
 .header-text {
-  margin: 50px 20%;
-  font-size: 32px;
+  padding: 1em;
+  font-size: 1.5rem;
   width: 60%;
   color: #092c12;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-media-links {
@@ -51,10 +51,15 @@
   margin: 0 25px;
 }
 
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
+
 .portfolio-item {
   display: flex;
-  margin: 2em 25%;
-  background-color:rgba(240,247,218,0.4);
+  margin: 0.5rem;
+  background-color:#f3e7879f;
   border-radius: 2em;
   box-shadow: 0.6em 0.6em 0.5em -0.6em rgba(19, 46, 3, 0.1);
   border: 0 solid black;
@@ -62,7 +67,7 @@
 }
 
 .portfolio-item:hover {
-  background-color:rgba(211, 218, 153, 0.6);
+  background-color:#f3e787;
 }
 
 .portfolio-item-image {
