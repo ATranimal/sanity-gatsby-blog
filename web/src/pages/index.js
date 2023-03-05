@@ -82,8 +82,46 @@ const IndexPage = props => {
           </div>
         </div>
 
+        <div className="highlighted-portfolio-items">
+          {portfolioItems.map((item, idx) => {
+            if (item.node.title !== "The Archipelago" && item.node.title !== "Force Shifters") {
+              return null;
+            }
+
+            return (
+              <div key={idx} className="portfolio-item-2">
+                {item.node.mainImage && item.node.mainImage.asset && (
+                  <div className="portfolio-item-image">
+                    <img
+                      src={imageUrlFor(buildImageObj(item.node.mainImage))
+                        .width(240)
+                        .height(Math.floor((9 / 16) * 240))
+                        .bg("000000")
+                        // .fit("fillmax")
+                        .auto("format")
+                        .url()}
+                      alt={item.node.mainImage.alt}
+                    />
+                  </div>
+                )}
+                <div className="portfolio-item-text">
+                  <h2>
+                    {item.node.title}{" "}
+                    <a href={item.node.link}>
+                      <i className="fa fa-link" aria-hidden="true"></i>
+                    </a>
+                  </h2>
+
+                  <PortableText blocks={item.node._rawBody} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
         <div className="portfolio-items">
           {portfolioItems.map((item, idx) => {
+            if (item.node.title === "The Archipelago" || item.node.title === "Force Shifters")
+              return null;
             return (
               <div key={idx} className="portfolio-item">
                 {item.node.mainImage && item.node.mainImage.asset && (

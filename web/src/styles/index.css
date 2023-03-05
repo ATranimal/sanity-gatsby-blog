@@ -66,6 +66,22 @@
   transition: background-color 0.2s;
 }
 
+.portfolio-item-2 {
+  display: flex;
+  margin: 0.5rem;
+  background-color:#f3e7879f;
+  border-radius: 2em;
+  box-shadow: 0.6em 0.6em 0.5em -0.6em rgba(19, 46, 3, 0.1);
+  border: 0 solid black;
+  transition: background-color 0.2s;
+}
+
+
+.portfolio-item-2:hover {
+  background-color:#f3e787;
+}
+
+
 .portfolio-item:hover {
   background-color:#f3e787;
 }
